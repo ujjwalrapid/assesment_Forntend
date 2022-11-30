@@ -124,8 +124,6 @@ const WalletConnect = () => {
         
     }
 
-  
-
     ethereum && ethereum.on("accountsChanged", handleAccountChange);
     ethereum &&
       ethereum.on("chainChanged", (_chainId) => {
