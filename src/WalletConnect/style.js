@@ -5,16 +5,13 @@ export const Container = styled.div`
 `
 
 export const Button = styled.button`
-background:green;
+background:black;
 margin:10px auto;
 color:white;
 border:none;
-padding:15px;
+padding:10px;
 cursor:pointer;
-transition:transform 0.2s;
-&:active{
-    transform:translateY(2px);
-}
+
 `
 
 export const Data = styled.div`
