@@ -2,7 +2,7 @@
 
 import WalletConnect from "./WalletConnect/WalletConnect";
 import BigNumber from "bignumber.js";
-import { transactionHash } from "./blockchain/methods";
+import { alloanceForApprove, transactionHash } from "./blockchain/methods";
 import { useState } from "react";
 function App() {
   const [hashEvent,setHashEvent]=useState()
@@ -21,8 +21,8 @@ function App() {
        <h3>Ans={}</h3>
        <button onClick={()=>transactionHash(setHashEvent,100)}>approve for 100</button>
        <h6>Transaction Hash For Approve={hashEvent}</h6>
-    </>
-      
+       <button onClick={()=>alloanceForApprove()}>Check allowance</button>
+      </>
   );
 }
 
